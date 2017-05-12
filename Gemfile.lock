@@ -80,6 +80,9 @@ GEM
     nio4r (2.0.0)
     nokogiri (1.7.2)
       mini_portile2 (~> 2.1.0)
+    paypal-sdk-rest (1.6.0)
+      multi_json (~> 1.0)
+      xml-simple
     puma (3.8.2)
     rack (2.0.2)
     rack-test (0.6.3)
@@ -149,6 +152,7 @@ GEM
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
+    xml-simple (1.1.5)
 
 PLATFORMS
   ruby
@@ -159,6 +163,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  paypal-sdk-rest
   puma (~> 3.0)
   rails (~> 5.0.2)
   sass-rails (~> 5.0)
