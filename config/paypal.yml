@@ -1,0 +1,29 @@
+test: &default
+
+  # Credentials for REST APIs
+  client_id: ARxwXuS96gcsErhARS8jJuVBKQOIt7i-FSNxkne468k3pSVUn3FyUvTFz9As3hSvVEwy7vdHD_RNtAl3
+  client_secret: WUojvBkqvuPY7iiToXWyZIel4l_kn1K2pAFs9QR4fQ8kKhRpCi73iq9IPmgu_7J4LIpmXo11Cn
+
+  # Mode can be 'live' or 'sandbox'
+  mode: sandbox
+
+  # Credentials for Classic APIs
+  app_id: APP-80W284485P519543T
+  username: crystal.badu-developer_api1.gmail.com
+  password: 1401085514
+  signature: AFcWxV21C7fd0v3bYYYRCpSSRl31AjL532FKOA9g9Ssz6S7TCUs9k1Hh-RWy
+  # # With Certificate
+  # cert_path: "config/cert_key.pem"
+  sandbox_email_address: Platform.sdk.seller@gmail.com
+
+  # # IP Address
+  # ip_address: 127.0.0.1
+  # # HTTP Proxy
+  # http_proxy: http://proxy-ipaddress:3129/
+
+development:
+  <<: *default
+
+production:
+  <<: *default
+  mode: live
